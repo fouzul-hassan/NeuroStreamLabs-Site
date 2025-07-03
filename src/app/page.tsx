@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -11,14 +12,6 @@ const Header = () => (
         <BrainCircuit className="h-6 w-6 text-primary" />
         <span className="text-lg">NeuroStream Labs</span>
       </Link>
-      <nav className="ml-auto flex items-center gap-4">
-        <Button asChild variant="outline" size="sm">
-          <Link href="#" prefetch={false}>
-            <Github className="mr-2 h-4 w-4" />
-            View on GitHub
-          </Link>
-        </Button>
-      </nav>
     </div>
   </header>
 );
@@ -32,15 +25,9 @@ const HeroSection = () => (
       <p className="max-w-[700px] text-lg text-muted-foreground">
         Home of MindBridge — open-source BCI models that decode brain activity into speech and text.
       </p>
-      <div className="flex gap-4">
+      <div className="flex justify-center">
         <Button asChild size="lg">
           <Link href="#mindbridge" prefetch={false}>Explore MindBridge</Link>
-        </Button>
-        <Button asChild variant="outline" size="lg">
-          <Link href="#" prefetch={false}>
-            <Github className="mr-2 h-4 w-4" />
-            GitHub
-          </Link>
         </Button>
       </div>
     </div>
